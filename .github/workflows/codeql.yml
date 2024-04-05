@@ -70,9 +70,9 @@ jobs:
         # For more details on CodeQL's query packs, refer to: https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning#using-queries-in-ql-packs        
         queries: security-extended
         # Test path-ignore filter with build-mode:none
-        config: |
-          paths:        
-          - src/main/java/org/owasp/webgoat/lessons/sqlinjection
+        # config: |
+        #   paths-ignore:        
+        #   - src/main/java/org/owasp/webgoat/lessons/sqlinjection
 
     # If the analyze step fails for one of the languages you are analyzing with
     # "We were unable to automatically build your code", modify the matrix above
